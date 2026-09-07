@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e11e7ef2829014499863d273ffdd98, type: 3}
+  m_Name: MaiDayRandom
+  m_EditorClassIdentifier: Assembly-CSharp::Base.Dialogues.DialogueSequenceSO
+  sequenceID: MaiDayRandom
+  type: 1
+  startingNodeID: 
+  goodOutcomeSequence: {fileID: 11400000, guid: 835309de3523f844694bad8f9e7bf4cc, type: 2}
+  neutralOutcomeSequence: {fileID: 11400000, guid: 105732c376221ce4697b3d2a0e71f0dd, type: 2}
+  badOutcomeSequence: {fileID: 11400000, guid: 7a839bc1649c342448da86cb969ec8e3, type: 2}
+  rewardsOnCompletion: []
+  nodeList: []
+  references:
+    version: 2
+    RefIds: []

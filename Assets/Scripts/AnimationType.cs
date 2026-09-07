@@ -1,0 +1,21 @@
+public enum AnimationType
+{
+    None,
+    MaiAngry,
+    MaiBleh,
+    MaiBlush,
+    MaiConfuse,
+    MaiDisgusting,
+    MaiHappy,
+    MaiHorny,
+    MaiLaugh,
+    MaiNoSmile,
+    MaiPeace,
+    MaiSmileTeeth,
+    MaiSurprise,
+    MaiSurpriseBlush,
+    MaiTalk,
+    MaiWink,
+    MaiWorry,
+    MaiYandere
+}

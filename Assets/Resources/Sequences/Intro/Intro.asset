@@ -1,0 +1,427 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cac6d03a308c55429b85ef602b45136, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: Assembly-CSharp::Base.CG.CGDialogueSequenceSO
+  sequenceID: Intro
+  startingNodeID: Node1
+  rewardsOnCompletion: []
+  nodeList:
+  - nodeID: Node1
+    nextNodeID:
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node1
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 0}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node2
+    nextNodeID:
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node2
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 0}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node3
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node3
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 0}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node4
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node4
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 0}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node5
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node5
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: a96f1ad7c8772264385a91cb585c4690, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node6
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node6
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: b3d80ed1ba939ff4ebe3cce19cfd5996, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node7
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node7
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 664c85783107d7e4896f3a906e373130, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node8
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node8
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 664c85783107d7e4896f3a906e373130, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node9
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node9
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: e40a6cd51dee6e248ad2f1dfaecf90b4, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node10
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node10
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: e40a6cd51dee6e248ad2f1dfaecf90b4, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node11
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node11
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 9f1414646ca043c46a89596f99bc27ff, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node12
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node12
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: edec3edb2b9084f4e8268a7df6f55405, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node13
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node13
+      fontStyle: 0
+      isMonologue: 1
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: edec3edb2b9084f4e8268a7df6f55405, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node13_Choices
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey:
+      fontStyle: 0
+      isMonologue: 1
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 0}
+    choices:
+    - localizationKey: Intro.Node13_Choices.choice.1
+      choiceText: 
+      nextNodeID: Node1_Surprise
+      nextSequenceSO: {fileID: 0}
+      startingNodeInNextSequenceID: 
+    - localizationKey: Intro.Node13_Choices.choice.2
+      choiceText: 
+      nextNodeID: Node1_WhatIsThat
+      nextSequenceSO: {fileID: 0}
+      startingNodeInNextSequenceID: 
+    rewardsOnNodeCompletion: []
+  - nodeID: Node1_Surprise
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node1_Surprise
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: edec3edb2b9084f4e8268a7df6f55405, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node2_Surprise
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node2_Surprise
+      fontStyle: 0
+      isMonologue: 1
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: edec3edb2b9084f4e8268a7df6f55405, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node3_Surprise
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node3_Surprise
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: f866827a4b949c5429fdec064ccee7b9, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node4_Surprise
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node4_Surprise
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: f866827a4b949c5429fdec064ccee7b9, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node5_Surprise
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node5_Surprise
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 4cd7de661a28e2a4a9f1eba721520aef, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node6_Surprise
+    nextNodeID:
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 1
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node6_Surprise
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 4cd7de661a28e2a4a9f1eba721520aef, type: 3}
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 1
+      stat: 1
+      amount: 2
+  - nodeID: Node1_WhatIsThat
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node1_WhatIsThat
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: edec3edb2b9084f4e8268a7df6f55405, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node2_WhatIsThat
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node2_WhatIsThat
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: f866827a4b949c5429fdec064ccee7b9, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node3_WhatIsThat
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node3_WhatIsThat
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: f866827a4b949c5429fdec064ccee7b9, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node4_WhatIsThat
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 1
+      localizationKey: Intro.Node4_WhatIsThat
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 10cc0d014eefec04a94bfe8a09388a7c, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node5_WhatIsThat
+    nextNodeID: 
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 0
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node5_WhatIsThat
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 21300000, guid: 10cc0d014eefec04a94bfe8a09388a7c, type: 3}
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: Node6_WhatIsThat
+    nextNodeID:
+    nextSequenceSO: {fileID: 0}
+    isEndNode: 1
+    lines:
+    - speaker: 0
+      localizationKey: Intro.Node6_WhatIsThat
+      fontStyle: 0
+      isMonologue: 1
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.5
+      cgSprite: {fileID: 0}
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 1
+      stat: 1
+      amount: -5
+  references:
+    version: 2
+    RefIds: []

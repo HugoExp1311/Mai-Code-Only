@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: 4089c5f4e75604444bd242233e9e18bb
+  m_SerializeEntries:
+  - m_GUID: 10cc0d014eefec04a94bfe8a09388a7c
+    m_Address: Assets/Image/CG/Opening Scene/Opening_9.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1137a5ba1055f894a9e2f85a8805d58d
+    m_Address: Assets/Image/CG/Opening Scene/Opening_32.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 145873daf438d9046b10659a63320fe5
+    m_Address: Assets/Image/CG/Opening Scene/Opening_36.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bab2e6134f397e45ba615382abf8655
+    m_Address: Assets/Image/CG/Opening Scene/Opening_27.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 244afb184aced5146a323390809f6dc2
+    m_Address: Assets/Image/CG/Opening Scene/Opening_10.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2853b623bac3d8b4ebaa4eb8b697eea2
+    m_Address: Assets/Image/CG/Opening Scene/Opening_31.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3935e22470313d54a8d3fca182164508
+    m_Address: Assets/Image/CG/Opening Scene/Opening_13.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3aada620af94cda419b5e8a5e62f7645
+    m_Address: Assets/Image/CG/Opening Scene/Opening_26.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40edf17a8d7cc064c8337a7fddbbe330
+    m_Address: Assets/Image/CG/Opening Scene/Opening_37.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 423ea21710460884cb07b34f3f6a195f
+    m_Address: Assets/Image/CG/Opening Scene/Opening_23.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 440a4959ab7d42048a240ecb4a98f4a0
+    m_Address: Assets/Image/CG/Opening Scene/Opening_25.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4934ae9cb041ba54f83e9fa7705cbc89
+    m_Address: Assets/Image/CG/Opening Scene/Opening_34.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4cd7de661a28e2a4a9f1eba721520aef
+    m_Address: Assets/Image/CG/Opening Scene/Opening_8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f5a3d241cecebe4dabfee198ac05a8a
+    m_Address: Assets/Image/CG/Opening Scene/Opening_14.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 506033996c5acfe4fa4ed02231d75b49
+    m_Address: Assets/Image/CG/Opening Scene/Opening_33.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5215fde426fcc044a8fe0b74503e2aed
+    m_Address: Assets/Image/CG/Opening Scene/Opening_20.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6414f46ba2f6fa8419df057d292e67c5
+    m_Address: Assets/Image/CG/Opening Scene/Opening_12.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 664c85783107d7e4896f3a906e373130
+    m_Address: Assets/Image/CG/Opening Scene/Opening_3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d424b8104edcc04ab57ab196b37c2f9
+    m_Address: Assets/Image/CG/Opening Scene/Opening_24.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9778f1d0db1a9b44993a1f566c473b1e
+    m_Address: Assets/Image/CG/Opening Scene/Opening_30.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 978bb91099d79014e90cec240d9b297d
+    m_Address: Assets/Image/CG/Opening Scene/Opening_17.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cb45a6a986ae5645811bcd265e3753c
+    m_Address: Assets/Image/CG/Opening Scene/Opening_15.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f1414646ca043c46a89596f99bc27ff
+    m_Address: Assets/Image/CG/Opening Scene/Opening_5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a96f1ad7c8772264385a91cb585c4690
+    m_Address: Assets/Image/CG/Opening Scene/Opening_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adbc6553803e31841b41f105b795a54f
+    m_Address: Assets/Image/CG/Opening Scene/Opening_28.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adbdd1e0e0b65bd45aead70a584f83a1
+    m_Address: Assets/Image/CG/Opening Scene/Opening_16.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b16ff6334e18df247ac4fcaf15ce03e7
+    m_Address: Assets/Image/CG/Opening Scene/Opening_29.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3d80ed1ba939ff4ebe3cce19cfd5996
+    m_Address: Assets/Image/CG/Opening Scene/Opening_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b954c341bdba81e45836b9e73e86a2e0
+    m_Address: Assets/Image/CG/Opening Scene/Opening_19.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7ca4c5fe4d994c46a745ef818bd76b1
+    m_Address: Assets/Image/CG/Opening Scene/Opening_21.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e40a6cd51dee6e248ad2f1dfaecf90b4
+    m_Address: Assets/Image/CG/Opening Scene/Opening_4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: edec3edb2b9084f4e8268a7df6f55405
+    m_Address: Assets/Image/CG/Opening Scene/Opening_6.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efc5ccca59156734792125dcda02dd25
+    m_Address: Assets/Image/CG/Opening Scene/Opening_11.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5b5c439bb5f6ed4c9e64ca0c771fc6a
+    m_Address: Assets/Image/CG/Opening Scene/Opening_35.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8266752f664f6f42a8b60ce14215a63
+    m_Address: Assets/Image/CG/Opening Scene/Opening_18.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f866827a4b949c5429fdec064ccee7b9
+    m_Address: Assets/Image/CG/Opening Scene/Opening_7.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd496cc31c57897418290318654a8694
+    m_Address: Assets/Image/CG/Opening Scene/Opening_22.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3f474c52135671047947d37e98c71e86, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 78180badd7230824193e4a3062a0fe70, type: 2}
+    - {fileID: 11400000, guid: 4e61ebf2f6104404baf9c9433a1b730e, type: 2}

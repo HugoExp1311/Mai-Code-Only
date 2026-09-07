@@ -1,0 +1,515 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e11e7ef2829014499863d273ffdd98, type: 3}
+  m_Name: MaiSpecificTopic
+  m_EditorClassIdentifier: Assembly-CSharp::Base.Dialogues.DialogueSequenceSO
+  sequenceID: MaiSpecificTopic
+  type: 0
+  startingNodeID: MST_TopicChoicesNode
+  goodOutcomeSequence: {fileID: 0}
+  neutralOutcomeSequence: {fileID: 0}
+  badOutcomeSequence: {fileID: 0}
+  rewardsOnCompletion: []
+  nodeList:
+  - nodeID: MST_TopicChoicesNode
+    lines:
+    - speaker: 1
+      localizationKey:
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices:
+    - localizationKey: MaiSpecificTopic.MST_TopicChoicesNode.choice.1
+      choiceText: 
+      nextNodeID: MST_WorkingHoursNode
+      nextSequenceSO: {fileID: 0}
+      startingNodeInNextSequenceID: 
+    - localizationKey: MaiSpecificTopic.MST_TopicChoicesNode.choice.2
+      choiceText: 
+      nextNodeID: MST_JobNode
+      nextSequenceSO: {fileID: 0}
+      startingNodeInNextSequenceID: 
+    - localizationKey: MaiSpecificTopic.MST_TopicChoicesNode.choice.3
+      choiceText: 
+      nextNodeID: MST_CoworkersNode
+      nextSequenceSO: {fileID: 0}
+      startingNodeInNextSequenceID: 
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode2
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode2
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode3
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode3
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode4
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode4
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode5
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode5
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 9
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode6
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode6
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode7
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode7
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode8
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode8
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode9
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode9
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode10
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode10
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursNode11
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_WorkingHoursNode11
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_WorkingHoursEnd
+    lines: []
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 0
+      stat: 4
+      amount: 5
+  - nodeID: MST_WorkingHoursEnd2
+    lines: []
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 1
+      stat: 1
+      amount: 2
+  - nodeID: MST_JobNode
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_JobNode
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode2
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode2
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode3
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode3
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode4
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_JobNode4
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode5
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode5
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 4
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode6
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode6
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode7
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode7
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode8
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode8
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode9
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode9
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode10
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_JobNode10
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobNode11
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_JobNode11
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 17
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_JobEnd
+    lines: []
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 0
+      stat: 4
+      amount: 5
+  - nodeID: MST_JobEnd2
+    lines: []
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 1
+      stat: 1
+      amount: 10
+  - nodeID: MST_CoworkersNode
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode2
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode2
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode3
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode3
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode4
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode4
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode5
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode5
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode6
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode6
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 17
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode7
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode7
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode8
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode8
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode9
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode9
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode10
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode10
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 5
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode11
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode11
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode12
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode12
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 17
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode13
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode13
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode14
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode14
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode15
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode15
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode16
+    lines:
+    - speaker: 1
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode16
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 14
+      loopAnimation: 1
+      animationFloatValue: 0.4
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersNode17
+    lines:
+    - speaker: 0
+      localizationKey: MaiSpecificTopic.MST_CoworkersNode17
+      fontStyle: 0
+      isMonologue: 0
+      animationToPlay: 0
+      loopAnimation: 1
+      animationFloatValue: 0.5
+    choices: []
+    rewardsOnNodeCompletion: []
+  - nodeID: MST_CoworkersEnd
+    lines: []
+    choices: []
+    rewardsOnNodeCompletion:
+    - target: 0
+      stat: 4
+      amount: 5
+  references:
+    version: 2
+    RefIds: []

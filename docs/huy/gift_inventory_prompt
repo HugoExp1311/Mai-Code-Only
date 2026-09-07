@@ -1,0 +1,97 @@
+## 2026-09-01T14:16:28Z — Implement gift-giving and generic item usage in InventoryItemUI
+
+### Task Summary
+
+`InventoryItemUI.OnGiveClicked` (line 117) and the non-condom branch of `OnUseClicked` (line 163) are stubs that log warnings. `DataManager.OnUseItem(IItem, Action<UIAction>)` already implements the full flow: calls `Player.UseItem` (removes item, restores stamina for Energy types) and, if `item.IsForGift()`, forwards to `Mai.ReceiveGift` (adds Love). Route both stubs through `DataManager.OnUseItem` to close the gap.
+
+### Target Files & Lines
+
+1. **`Assets/Scripts/Inventory/InventoryItemUI.cs`** — `OnGiveClicked` (lines 117–129), `OnUseClicked` non-condom branch (lines 163–166).
+2. **`Assets/Scripts/Base/DataManager.cs`** — `OnUseItem` (lines 50–59): no change needed; already implements the flow. Referenced as the call target.
+3. **`Assets/Scripts/Base/Character/Player.cs`** — `UseItem` (lines 47–62): no change; already handles `Energy`/`SpecialEnergy` and removes item.
+4. **`Assets/Scripts/Base/Character/Mai.cs`** — `ReceiveGift` (lines 92–104): no change; already adds clamped Love and raises `StatsChangedEvent`.
+
+### GitNexus Context Findings
+
+- `query("gift giving")` returned `OnGiveClicked`, `InitiateGift`, `ReceiveGift`, `OnGiftButtonClick`, `MaiPanel`, `InventoryItemUI` as the gift surface.
+- `context("OnUseItem")` confirmed `DataManager.OnUseItem` calls `UseItem`, `ReceiveItem`, and `IsForGift` — the three symbols in the gift chain.
+- `context("OnGiveClicked")` showed 0 resolved callers (button-attached via `AddListener`, not indexed). `risk: UNKNOWN` — confirmed by text search: called only from `SetupActionButton` line 89.
+
+### Impact Assessment
+
+- `impact("OnUseItem", upstream)` → `risk: UNKNOWN`, 0 callers resolved. Text search confirms no direct calls from outside `DataManager` — `OnUseItem` is called from nothing currently (the stubs don't call it). Adding calls from `InventoryItemUI` is a new edge, not a break.
+- `impact("UseItem", upstream)` → 3 candidates, `risk: LOW` (max 21 impacted at d=1, all `LOW`). `Player.UseItem` has 1 direct caller (`DoAction`).
+- `impact("ReceiveGift", upstream)` → `risk: LOW`, 5 impacted, 2 processes (`ApplyForeplayOrgasmBarIncrease`, `CalculateAndApplySessionRewards`). These are sex-simulation flows that call `Mai.ChangeStat` (which also modifies Love) — unaffected by adding a new caller to `ReceiveGift` via `DataManager.OnUseItem`.
+- `impact("OnGiveClicked", upstream)` → `risk: UNKNOWN`, 0 callers (button listener). Safe — wired in `SetupActionButton`.
+- **Overall risk: LOW.** No shared-architecture symbols modified. No public API/enum/serialized field changes. `OnGiveClicked`/`OnUseClicked` are private button handlers.
+
+### Step-by-Step Implementation
+
+**1. `OnGiveClicked` (lines 117–129): make `async void`, replace stub with `DataManager.OnUseItem` call + `UpdateAmount()`.**
+
+Replace:
+```csharp
+private void OnGiveClicked()
+{
+    if (item == null || item.Amount() <= 0) return;
+    
+    // TODO: Implement gift giving logic — requires CharacterInteractManager.InitiateGift
+    Debug.LogWarning($"[InventoryItemUI] Gift giving not yet implemented for: {item.Identifier()}");
+    
+    // Play gift sound
+    if (AudioManager.Instance != null && FMODEvents.Instance != null)
+    {
+        AudioManager.Instance.PlayOneShot(FMODEvents.Instance.OnNotice);
+    }
+}
+```
+
+With:
+```csharp
+private async void OnGiveClicked()
+{
+    if (item == null || item.Amount() <= 0) return;
+
+    if (GameManager.Instance == null || GameManager.Instance.DataManager == null) return;
+
+    await GameManager.Instance.DataManager.OnUseItem(item, null);
+    UpdateAmount();
+
+    if (AudioManager.Instance != null && FMODEvents.Instance != null)
+    {
+        AudioManager.Instance.PlayOneShot(FMODEvents.Instance.OnNotice);
+    }
+}
+```
+
+**2. `OnUseClicked` non-condom branch (lines 163–164): replace TODO stub with `DataManager.OnUseItem` call + `UpdateAmount()`.**
+
+Replace:
+```csharp
+        // TODO: Implement item usage logic based on item type
+        Debug.LogWarning($"[InventoryItemUI] Item usage not yet implemented for: {item.Identifier()}");
+```
+
+With:
+```csharp
+        if (GameManager.Instance == null || GameManager.Instance.DataManager == null) return;
+
+        await GameManager.Instance.DataManager.OnUseItem(item, null);
+        UpdateAmount();
+```
+
+`PlayUseSound()` at line 166 stays — it runs after the await, same as the condom path.
+
+### Edge Cases
+
+1. **`GameManager.Instance` or `DataManager` is null** → early return; item not consumed, no sound. Matches the null-guard pattern in the existing condom path (line 145).
+2. **Item amount ≤ 0** → early return at top of both methods; button is already non-interactable (`SetupActionButton` line 68).
+3. **Gift item (Love type)**: `Player.UseItem` removes the item (line 52) and returns `DoneWithNothing` (no stat change). `IsForGift()` returns true → `Mai.ReceiveGift` adds clamped Love. Correct.
+4. **Energy item**: `Player.UseItem` removes item and restores stamina (capped at max). `IsForGift()` returns false → no `ReceiveGift`. Correct.
+5. **Item amount reaches 0 after use**: `Inventory.RemoveItem` removes it from the list (line 74–76). `InventoryItemUI` still holds the `IItem` reference; `UpdateAmount()` sets `actionButton.interactable = false`. Button is visually disabled. Correct.
+6. **Condom path**: unchanged — early-returns before the new code. `TryActivateCowgirlCondom` guard still gates it.
+
+### Verification
+
+- Unity MCP unavailable (MCPJungle down per `-Status`). Unity verification skipped — MCPJungle down.
+- Manual: compile in Unity Editor → check Console for errors. Exercise gift flow: buy a gift item (e.g. `flower`) → open inventory → click Give → confirm Mai's Love increases and item amount decrements. Exercise Energy flow: buy `milk` → click Use → confirm Player Stamina increases and amount decrements.
